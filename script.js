@@ -45,25 +45,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    // // Form submission (prevent default for now)
-    // const contactForm = document.querySelector('.contact-form');
-    // if (contactForm) {
-    //     contactForm.addEventListener('submit', (e) => {
-    //         e.preventDefault();
+    // Form submission (prevent default for now)
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
             
-    //         // Get form values
-    //         const name = document.getElementById('name').value;
-    //         const email = document.getElementById('email').value;
-    //         const message = document.getElementById('message').value;
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
             
-    //         // Here you would typically send this data to a server
-    //         // For now, just show an alert
-    //         alert(`Thanks for your message, ${name}! I'll get back to you soon.`);
+            // Here you would typically send this data to a server
+            // For now, just show an alert
+            alert(`Thanks for your message, ${name}! I'll get back to you soon.`);
             
-    //         // Reset form
-    //         contactForm.reset();
-    //     });
-    // }
+            // Reset form
+            contactForm.reset();
+        });
+    }
     
      // Horizontal scrolling for projects
     const projectsGrid = document.querySelector('.projects-grid');
