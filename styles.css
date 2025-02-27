@@ -303,7 +303,7 @@ nav {
 }
 
 .project-image {
-    height: 100px;
+    height: 200px;
     background-color: var(--mid);
     overflow: hidden;
     display: flex;
